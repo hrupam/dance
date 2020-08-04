@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Roboto&family=Ubuntu&display=swap');
+/* font-family: 'Baloo Da 2', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    /* justify-content: space-around; */
+    background-color: #2F363F;
+    padding: 15px 15px;
+    position: sticky;
+    top: 0px;
+    z-index: 21;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 55px;
+}
+
+#logo img {
+    height: 40px;
+    width: 40px;
+    filter: invert(90%);
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    /* border: 2px solid black; */
+    margin: 0px 6px;
+    color: whitesmoke;
+}
+
+#navbar li a:hover {
+    color: #99AAAB;
+    border-bottom: 2px solid whitesmoke;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    /* transition-timing-function: ease-in-out; */
+    transition-property: border;
+}
+
+#introSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+    font-size: 2rem;
+    align-items: center;
+    font-family: 'Baloo Da 2', cursive;
+    /* background-color: red; */
+    height: 100vh;
+    background: url('./static/dance_bg.jpg') no-repeat center center/cover;
+    color: #192A56;
+    z-index: 3;
+    position: sticky;
+    top: 74px;
+}
+
+#missionSection {
+    background-color: whitesmoke;
+    padding-bottom: 15px;
+    text-align: center;
+    color: black;
+    z-index: 5;
+    position: sticky;
+    top: 74px;
+
+}
+
+#missionSection h2 {
+    padding: 12px 0px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#cardsBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    width: 30%;
+    /* height: 210px; */
+    background-color: #a4b0bd6e;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 17px;
+    padding: 7px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img p {
+    padding: 25px;
+    font-size: 18px;
+}
+
+.card-img img {
+    width: 100px;
+    height: 100px;
+    padding-left: 9px;
+}
+
+#sponsorSection {
+    background-color: #DAE0E2;
+    /* height: 300px; */
+    text-align: center;
+    color: #2C3335;
+    z-index: 8;
+    top: 74px;
+    position: sticky;
+}
+
+#sponsorSection h2 {
+    padding: 12px 0px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+#sponsorBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+#sponsorBlock img{
+    width: 100px;
+    height: 100px;
+    margin: 20px 40px;
+}
+/* for skype image */
+#sponsorBlock > img:last-child{
+    width: 200px;
+}
+
+#footer {
+    background-color: #2C3335;
+    color: whitesmoke;
+    /* height: 100px; */
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 13;
+    top: 74px;
+    position: sticky;
+}
+
+/* UTILITY CLASS */
+
+.small {
+    font-size: 1.5rem;
+}

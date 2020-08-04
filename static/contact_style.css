@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    padding: 15px 0px;
+}
+section{
+    padding-bottom: 40px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputField{
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+    width: 40%;
+    padding: 4px 0px;
+    margin: 5px 0px;
+    border: 2px solid #535C68;
+    border-radius: 6px;
+}
+#btn{
+    background-color: #4C4B4B;
+    color: #DAE0E2;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-top: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}

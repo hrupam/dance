@@ -1,0 +1,30 @@
+doctype html
+html
+    head
+        title Rup's Dance Academy
+
+        block scripts
+
+        //- LAYOUT STYLE
+        style
+            include ../static/style.css
+
+        block style
+
+    body
+        nav#navbar
+            div#logo
+                img(src="./static/img/logo.png" alt="Logo")
+
+            ul
+                li #[a(href='/') Home]
+                li #[a(href='/') About]
+                li #[a(href='/') Services]
+                li #[a(href='/') Class Info]
+                li #[a(href='/contact') Contact Us]
+
+        block content
+
+
+        footer#footer
+            | Copyright &copy 2020 RupDanceAcademy.com | All Rights Reserved.

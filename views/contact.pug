@@ -1,0 +1,22 @@
+extends layout.pug
+
+//- NO SCRIPTS ADDED
+//- block scripts
+//-     script(src="../static/index.js")
+
+block style
+    style
+        include ../static/contact_style.css
+
+block content
+    section
+        h1 Contact Us
+        form(action="/submit", method="post", id="form")
+            input(type="text", name="name", class="inputField", placeholder="Name")
+            input(type="phone", name="phone", class="inputField", placeholder="Contact No.")
+            input(type="email", name="email", class="inputField", placeholder="Email ID")
+            input(type="text", name="gender", class="inputField", placeholder="Gender")
+            input(type="text", name="address", class="inputField", placeholder="Address")
+            input(type="text", name="message", class="inputField", placeholder="Message")
+            button(type="submit", id="btn")
+                | Submit
